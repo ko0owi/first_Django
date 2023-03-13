@@ -1,0 +1,97 @@
+body{
+    background-color: pink;
+    color: black;
+}
+
+
+.form{
+    font-size: 35px;
+}
+
+.button{
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    color: white;
+}
+
+#contener {
+    width: 1000px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#menu{
+
+    height: 100px;
+    text-align: center;
+    background-color: red;
+    margin-top:25px;
+}
+
+#content{
+    margin-top:60px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.option{
+    float:left;
+    background-color: green;
+    font-size: 37px;
+    height: 40px;
+    width: 450px;
+    margin-left:33px;
+    margin-top:30px;
+    border: 1px solid black;
+
+    }
+
+#foot {
+    border: 1px solid black;
+    height: 100px;
+}
+
+
+.Link_1{
+    float:left;
+    width: 250px;
+    background-color:orange;
+        height: 70px;
+}
+
+.Link_1:hover{
+background-color: white;
+}
+
+.Link_4:hover{
+background-color: white;
+}
+
+.Link_3:hover{
+background-color: pink;
+}
+
+
+.Link_2{
+    float:left;
+    width: 250px;
+    background-color:black;
+    height: 70px;
+}
+
+.Link_3{
+    float:left;
+    width: 250px;
+    background-color:orange;
+    height: 70px;
+}
+
+
+.Link_4{
+    float:left;
+    width: 248px;
+    background-color:black;
+    height: 70px;
+}
+

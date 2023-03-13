@@ -1,0 +1,42 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href='{% static "task_app/style.css" %}'>
+</head>
+<body>
+
+<div id="contener">
+
+    <div id="menu">
+        <div class="option"> <a href="{% url 'task_app:task_list' %}" class="button">LISTA </a> </div>
+        <div class="option"> <a href='{% url "task_app:task_create" %}' class="button">CREATE</a>  </div>
+        <div style="clear:both;"></div>
+    </div>
+
+    <div id="content">
+        {%block create%}{% endblock %}
+        {%block lista %}{% endblock %}
+        {%block delete %}{% endblock %}
+    </div>
+
+    <div id="foot">
+        <div class="Link_1"> </div>
+        <div class="Link_2"> </div>
+        <div class="Link_3"> </div>
+        <div class="Link_4"> LALA</div>
+        <div style="clear:both"></div>
+
+
+    </div>
+
+
+</div>
+
+
+
+</body>
+</html>

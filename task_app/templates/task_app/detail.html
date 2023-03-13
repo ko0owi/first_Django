@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+     <form method="GET">
+
+            <input type="text" name="member" placeholder="Uczestnik">
+            <input type="submit" value="Wpisz imię żeby dowiedzieć się gdzie mieszka">
+        </form>
+
+
+        {% for item in members %}
+       <p>  {{member}}  MIESZKA W  {{item.adress}}</p>
+        {% endfor %}
+
+
+</body>
+</html>

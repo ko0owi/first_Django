@@ -1,0 +1,13 @@
+{% extends "task_app/layout.html" %}
+{% block create %}
+
+    <h3>TWORZENIE NOWEJ POSTACI</h3>
+        <form class="form" method="POST">
+            {% csrf_token %}
+            <input type="text" name="name" placeholder=" Imię Uczestnika">
+            <input type="text" name="adres" placeholder="Miasto uczestnika">
+            <input type="submit" value="DODAJ POSTAĆ">
+
+        </form>
+        <a href="{% url 'task_app:task_list' %}" ><button>  Pokaż pełną liste postaci  </button></a>
+{% endblock %}

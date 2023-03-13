@@ -1,0 +1,11 @@
+{% extends "task_app/layout.html" %}
+{% block delete %}
+
+<h3>usuwanie  = {{task.name}} = z listy</h3>
+<form method="POST">
+    {%csrf_token%}
+
+    <p>Czy na pewno chcesz usunąc ?</p> <input type="submit" value="Potwierdź
+</form>
+
+{% endblock %}

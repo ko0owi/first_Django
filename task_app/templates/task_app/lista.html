@@ -1,0 +1,16 @@
+{% extends "task_app/layout.html" %}
+{% block lista %}
+
+        <h2>Lista uczestników :</h2>
+        <ol>
+            {% for task in tasks %}
+
+            <li>
+            {{task.name}}  {{task.adress}}
+            <a href="{% url 'task_app:task_read' task.id %}"><button>USUŃ</button></a>
+            </li>
+
+        {%endfor%}
+        </ol>
+
+{% endblock %}
